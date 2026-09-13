@@ -48,7 +48,7 @@ function SlideOne({ progress }) {
 
   return (
     <>
-      <div className="absolute top-[50svh] -translate-y-1/2 left-1/2 -translate-x-1/2 h-full w-full">
+      <div className="absolute top-1/2 -translate-y-1/2 left-1/2 -translate-x-1/2 h-full w-full">
         <motion.div style={{ y: yCombined, opacity: opacityInitial }} className="h-full flex justify-center">
           <Image
             src={`/images/carcloud_1.png`}
