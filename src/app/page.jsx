@@ -412,7 +412,7 @@ function Slide({ backgroundImage, children }) {
           scope.current = node;
         }}
         initial={{ scale: 1.2 }}
-        className="w-dvw h-dvh flex items-center justify-center overflow-clip">
+        className="w-dvw h-lvh flex items-center justify-center overflow-clip">
         <Image
           src={`/images/${backgroundImage}`}
           alt="background"
