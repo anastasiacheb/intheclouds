@@ -405,12 +405,9 @@ function Slide({ backgroundImage, children }) {
   }, [isInView]);
 
   return (
-    <section className="snap-start relative overflow-clip h-lvh">
+    <section ref={ref} className="snap-start relative overflow-clip h-lvh">
       <motion.div
-        ref={(node) => {
-          ref.current = node;
-          scope.current = node;
-        }}
+        ref={scope}
         initial={{ scale: 1.2 }}
         className="w-dvw h-full flex items-center justify-center overflow-clip">
         <Image
